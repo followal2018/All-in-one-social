@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sanfranciscodisplaybold"
+        android:paddingLeft="@dimen/margin10"
+        android:paddingTop="@dimen/margin10"
+        android:text="@string/all_in_one"
+        android:textColor="#A049037A"
+        android:textSize="@dimen/ExLagetext" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sfprodisplayregular"
+        android:paddingLeft="@dimen/margin10"
+        android:paddingBottom="@dimen/margin10"
+        android:text="@string/social_media_apps"
+        android:textColor="#A08F2AD8"
+        android:textSize="@dimen/Lagetext" />
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvMessages"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="false"
+            android:nestedScrollingEnabled="false" />
+        <!--
+
+                &lt;!&ndash;<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/scrollView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fillViewport="true">&ndash;&gt;
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        tools:context=".classified.home.HomeFragment">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+        -->
+
+        <!--</androidx.core.widget.NestedScrollView>-->
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <!--<com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/app_id">
+
+    </com.google.android.gms.ads.AdView>-->
+</LinearLayout>

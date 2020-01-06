@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "710275456672",
+    "firebase_url": "https://allinone-78932.firebaseio.com",
+    "project_id": "allinone-78932",
+    "storage_bucket": "allinone-78932.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:710275456672:android:0c3dc30490463d8fb4b3c5",
+        "android_client_info": {
+          "package_name": "com.social_media.ad.classifieds"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "710275456672-e7h55b5p6sfvc7l78lgil49l97g3luup.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1C9Wu1ZO4Uzrwpk-y68cEYEVHAaVWrL0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "710275456672-e7h55b5p6sfvc7l78lgil49l97g3luup.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

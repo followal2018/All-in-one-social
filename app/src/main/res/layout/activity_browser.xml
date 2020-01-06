@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".activity.BrowserActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activity.BrowserActivity">
+        <!--<ProgressBar
+            android:id="@+id/loadingPageProgress"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:indeterminateDuration="10"
+            android:indeterminateBehavior="repeat"
+            android:progressBackgroundTint="#208afa"
+            android:progressBackgroundTintMode="multiply"
+            android:background="@drawable/change_backword"
+            android:max="100"
+            android:progress="50"
+            android:layout_alignParentTop="true"
+            android:progressDrawable="@drawable/changeprocess"
+            />-->
+
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adViewss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:visibility="visible"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="@string/app_id" />
+
+        <com.social_media.ad.classifieds.rcprogressbar.RoundCornerProgressBar
+            android:id="@+id/loadingPageProgress"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            app:rcBackgroundColor="@color/custom_progress_background"
+            app:rcBackgroundPadding="3dp"
+            app:rcMax="100"
+            app:rcProgress="5"
+            app:rcProgressColor="@color/custom_progress_orange_progress"
+            app:rcRadius="0dp"/>
+
+<!--
+        <ProgressBar
+            android:id="@+id/loadingPageProgress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="@drawable/change_backword"
+            android:max="100"
+            android:progress="0"
+            android:progressBackgroundTint="#208afa"
+            android:progressDrawable="@drawable/changeprocess"
+            android:visibility="visible" />-->
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/gohomes"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/bg_home"
+        android:foregroundGravity="center"
+        android:src="@drawable/ic_home_black_24dp" />
+
+</FrameLayout>
